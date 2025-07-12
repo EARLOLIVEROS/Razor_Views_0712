@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "APPS DEV HOME"; //TITLE OF THE PAGE 
+    var time = DateTime.Now.ToString("hh:mm:ss tt"); //COMPILER OF LINE IS THE SEMI COLON
+}
+
+<div class="text-center">
+    <h1 class="display-4">AppsDev_0712</h1>
+    <p>The time is: @time </p>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form>
+        <input type="text" id="fullname" placeholder="Fullname" />
+        <input type="text" name="lastname" placeholder="LastName" />
+        <input type="radio" name="gender" value="Male" />
+    </form>
+    @{
+        
+        var fruits = new[]
+        {
+        new { ItemNumber = 1, FruitName = "Apple" },
+        new { ItemNumber = 2, FruitName = "Banana" },
+        new { ItemNumber = 3, FruitName = "Orange" }
+        };
+    }
+
+    <h2>Earl's Favorite Fruits</h2>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Item Number</th>
+                <th>Fruit Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var f in fruits)
+            {
+                <tr>
+                    <td>@f.ItemNumber</td>
+                    <td>@f.FruitName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <form method="post">
+        <label>Input Here</label><br />
+        <input type="text" name="subject" placeholder="Subject" /><br /><br />
+
+        <input type="checkbox" name="streets" value="Street1" /> Siling Bata<br />
+        <input type="checkbox" name="streets" value="Street2" /> Cacarong Bata<br />
+        <input type="checkbox" name="streets" value="Street3" /> Bagong Barrio<br /><br />
+
+        <p>My Name is Earl John. Im glad to meet you. you know i dont have prior knowledge with what im doing rn hehehhez</p>
+    </form>
+    <ul style="text-align:left">
+
+        <li>Blinding Lights – The Weeknd</li>
+        <li>Shape of You – Ed Sheeran</li>
+        <li>Levitating – Dua Lipa</li>
+    </ul>
+</div>
