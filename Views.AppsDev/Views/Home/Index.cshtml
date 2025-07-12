@@ -1,6 +1,6 @@
 ﻿@{
-    ViewData["Title"] = "APPS DEV"; 
-    var time = DateTime.Now.ToString("hh:mm:ss tt"); 
+    ViewData["Title"] = "APPS DEV HOME"; //TITLE OF THE PAGE 
+    var time = DateTime.Now.ToString("hh:mm:ss tt"); //COMPILER OF LINE IS THE SEMI COLON
 }
 
 <div class="text-center">
@@ -12,38 +12,23 @@
         <input type="text" name="lastname" placeholder="LastName" />
         <input type="radio" name="gender" value="Male" />
     </form>
-    
     @{
+        
         var fruits = new[]
         {
-        new { ItemNumber = 1, FruitName = "Mango" },
-        new { ItemNumber = 2, FruitName = "Grapes" },
-        new { ItemNumber = 3, FruitName = "Lychee" }
+        new { ItemNumber = 1, FruitName = "Apple" },
+        new { ItemNumber = 2, FruitName = "Banana" },
+        new { ItemNumber = 3, FruitName = "Orange" }
         };
     }
 
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+    <h2>Earl's Favorite Fruits</h2>
 
-        table {
-            margin: 0 auto;
-        }
-
-        th, td {
-            text-align: center;
-            padding: 4px 8px;
-    </style>
-
-    <h2>Favorite Fruits</h2>
-
-    <table>
+    <table class="table table-bordered table-striped">
         <thead>
             <tr>
-                <th>Item&nbsp;Number</th>
-                <th>Fruit&nbsp;Name</th>
+                <th>Item Number</th>
+                <th>Fruit Name</th>
             </tr>
         </thead>
         <tbody>
@@ -55,29 +40,21 @@
                 </tr>
             }
         </tbody>
-    </table>   
-    <br/>
-
+    </table>
     <form method="post">
+        <label>Input Here</label><br />
         <input type="text" name="subject" placeholder="Subject" /><br /><br />
 
+        <input type="checkbox" name="streets" value="Street1" /> Siling Bata<br />
+        <input type="checkbox" name="streets" value="Street2" /> Cacarong Bata<br />
+        <input type="checkbox" name="streets" value="Street3" /> Bagong Barrio<br /><br />
 
-        <p>Streets in San Roque</p>
-        <input type="checkbox" name="streets" value="Street1" /> Matiaga<br />
-        <input type="checkbox" name="streets" value="Street2" /> Marilag<br />
-        <input type="checkbox" name="streets" value="Street3" /> Mahusay<br /><br />
+        <p>My Name is Earl John. Im glad to meet you. you know i dont have prior knowledge with what im doing rn hehehhez</p>
     </form>
+    <ul style="text-align:left">
 
-    <textarea id="w3review" name="w3review" rows="4" cols="50">
-        'I'm Sheirlyn, Hello po!:)'
-    </textarea>
-    <br/>
-    <br/>
-
-    <p style ="text-align:center"> Favorite Songs</p>
-    <ul style="text-align:center">
-        <li>The Shade - Rex Orange Country</li>
-        <li>Nothing - Bruno Major</li>
-        <li>Japanese Denim - Daniel Ceasar</li>
-    </ul><br />
+        <li>Blinding Lights – The Weeknd1</li>
+        <li>Shape of You – Ed Sheeran</li>
+        <li>Levitating – Dua Lipa</li>
+    </ul>
 </div>
