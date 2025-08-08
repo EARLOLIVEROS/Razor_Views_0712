@@ -1,22 +1,69 @@
+/* -------------------------------------------------- */
+/* 0.  ROOT & BOOTSTRAP OVERRIDES (keep these)        */
+/* -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+/* -------------------------------------------------- */
+/* 1.  FORM GLOBALS                                    */
+/* -------------------------------------------------- */
+form,
+fieldset,
+select,
+input[type="text"],
+textarea,
+button[type="submit"] {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px; /* change as desired */
+}
+
+    /* -------------------------------------------------- */
+    /* 2.  LABELS                                          */
+    /* -------------------------------------------------- */
+    form label,
+    fieldset label {
+        color: #007bff; /* new label color */
+        font-weight: 600;
+    }
+
+/* -------------------------------------------------- */
+/* 3.  ABOUT ME SECTION                                */
+/* -------------------------------------------------- */
+label[for="w3review"],
+#w3review {
+    font-size: 20pt; /* 20 pt exactly */
+    color: #d9534f; /* paragraph color */
+}
+
+/* -------------------------------------------------- */
+/* 4.  OPTIONAL LAYOUT NICE-TO-HAVES                   */
+/* -------------------------------------------------- */
+.text-center {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .1);
 }

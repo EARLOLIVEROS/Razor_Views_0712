@@ -10,7 +10,21 @@
     <form>
         <input type="text" id="fullname" placeholder="Fullname" />
         <input type="text" name="lastname" placeholder="LastName" />
-        <input type="radio" name="gender" value="Male" />
+        <fieldset>
+            <label>Select Gender</label>
+
+            <!-- Male -->
+            <label class="radio-row">
+                <input type="radio" name="gender" value="Male">
+                <span>Male</span>
+            </label>
+
+            <!-- Female -->
+            <label class="radio-row">
+                <input type="radio" name="gender" value="Female">
+                <span>Female</span>
+            </label>
+        </fieldset>
     </form>
     @{
         
@@ -49,7 +63,9 @@
         <input type="checkbox" name="streets" value="Street2" /> Cacarong Bata<br />
         <input type="checkbox" name="streets" value="Street3" /> Bagong Barrio<br /><br />
 
+        <label>About Me</label><br/>
         <p>My Name is Earl John. Im glad to meet you. you know i dont have prior knowledge with what im doing rn hehehhez</p>
+
     </form>
     <ul style="text-align:left">
 
