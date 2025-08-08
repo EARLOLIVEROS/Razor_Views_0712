@@ -1,6 +1,4 @@
-/* -------------------------------------------------- */
-/* 0.  ROOT & BOOTSTRAP OVERRIDES (keep these)        */
-/* -------------------------------------------------- */
+
 html {
     font-size: 14px;
     position: relative;
@@ -25,9 +23,8 @@ body {
     margin-bottom: 60px;
 }
 
-/* -------------------------------------------------- */
 /* 1.  FORM GLOBALS                                    */
-/* -------------------------------------------------- */
+
 form,
 fieldset,
 select,
@@ -38,27 +35,27 @@ button[type="submit"] {
     font-size: 16px; /* change as desired */
 }
 
-    /* -------------------------------------------------- */
+   
     /* 2.  LABELS                                          */
-    /* -------------------------------------------------- */
+
     form label,
     fieldset label {
         color: #007bff; /* new label color */
         font-weight: 600;
     }
 
-/* -------------------------------------------------- */
+
 /* 3.  ABOUT ME SECTION                                */
-/* -------------------------------------------------- */
+
 label[for="w3review"],
 #w3review {
     font-size: 20pt; /* 20 pt exactly */
     color: #d9534f; /* paragraph color */
 }
 
-/* -------------------------------------------------- */
+
 /* 4.  OPTIONAL LAYOUT NICE-TO-HAVES                   */
-/* -------------------------------------------------- */
+
 .text-center {
     max-width: 1100px;
     margin: 40px auto;
